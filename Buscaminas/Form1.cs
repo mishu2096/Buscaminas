@@ -104,7 +104,7 @@ namespace Buscaminas
                         botones[i, j].BackColor = System.Drawing.Color.Lavender;
                        flowLayoutPanel1.Enabled = false;
                         DialogResult result;
-                        result = MessageBox.Show("Te quedaste sin piernas! , quieres salir del juego?", "My Application",
+                        result = MessageBox.Show("Te quedaste sin piernas! , quieres salir del juego?", "Busca - Minas",
                             MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (result == System.Windows.Forms.DialogResult.Yes)
                         {
