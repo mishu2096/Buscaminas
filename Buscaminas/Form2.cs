@@ -24,5 +24,9 @@ namespace Buscaminas
         {
         }
 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

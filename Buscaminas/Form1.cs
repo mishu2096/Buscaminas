@@ -30,8 +30,8 @@ namespace Buscaminas
             timer1.Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Enabled = true;
-            this.ClientSize = new System.Drawing.Size(300, 300);
-            flowLayoutPanel1.Size = new System.Drawing.Size(160, 160);
+            this.ClientSize = new System.Drawing.Size(500, 500);
+            flowLayoutPanel1.Size = new System.Drawing.Size(300, 300);
             inicializarTableroJuego(8, 8);
         }
         private void button2_Click(object sender, EventArgs e){
