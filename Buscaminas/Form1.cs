@@ -144,7 +144,7 @@ namespace Buscaminas
                 timer1.Enabled = false;
                 BackgroundImage = caritaBitmap;
 
-                result = MessageBox.Show("Ganaste en *(^O^)*" + this.label3.Text + "", "Busca - Minas");
+                result = MessageBox.Show("Ganaste *(^O^)* en " + this.label3.Text + "", "Busca - Minas");
 
             }
 
