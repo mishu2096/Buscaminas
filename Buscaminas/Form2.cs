@@ -20,11 +20,22 @@ namespace Buscaminas
 
             frm.Show();
         }
+        private void buttonscore_Click(object sender, EventArgs e)
+        {
+            Form3 frm = new Form3();
+
+            frm.Show();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

@@ -25,8 +25,8 @@ namespace Buscaminas
 
         private void button1_Click(object sender, EventArgs e){
             
-            row = 8;
-            col = 8;
+            row = 10;
+            col = 10;
             timer1.Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Enabled = true;
