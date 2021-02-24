@@ -30,8 +30,8 @@ namespace Buscaminas
             timer1.Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Enabled = true;
-            this.ClientSize = new System.Drawing.Size(500, 500);
-            flowLayoutPanel1.Size = new System.Drawing.Size(300, 300);
+            this.ClientSize = new System.Drawing.Size(300, 300);
+            flowLayoutPanel1.Size = new System.Drawing.Size(160, 160);
             inicializarTableroJuego(8, 8);
         }
         private void button2_Click(object sender, EventArgs e){
@@ -100,12 +100,12 @@ namespace Buscaminas
                     {
                         timer1.Enabled = false;
 
-                        botones[i, j].BackgroundImage = bombaBitmap;
+                        botones[i, j].Image = global::Buscaminas.Properties.Resources.bomba;
                         botones[i, j].BackColor = System.Drawing.Color.Lavender;
                        flowLayoutPanel1.Enabled = false;
                         DialogResult result;
                         result = MessageBox.Show("Te quedaste sin piernas! , quieres salir del juego?", "Busca - Minas",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (result == System.Windows.Forms.DialogResult.Yes)
                         {
                             this.Close();
@@ -144,7 +144,7 @@ namespace Buscaminas
                 flowLayoutPanel1.Enabled = false;
                 timer1.Enabled = false;
 
-                result = MessageBox.Show("Ganaste en "+this.label3.Text+", salir del juego?", "My Application",
+                result = MessageBox.Show("Ganaste en "+this.label3.Text+", salir del juego?", "Busca - Minas",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == System.Windows.Forms.DialogResult.Yes)
                 {

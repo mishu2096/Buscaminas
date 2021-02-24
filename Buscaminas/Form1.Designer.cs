@@ -47,7 +47,7 @@ namespace Buscaminas
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(18, 13);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
@@ -60,7 +60,7 @@ namespace Buscaminas
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -74,7 +74,7 @@ namespace Buscaminas
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Location = new System.Drawing.Point(152, 13);
             this.button3.Name = "button3";
@@ -145,6 +145,7 @@ namespace Buscaminas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(441, 318);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label3);
