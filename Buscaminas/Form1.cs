@@ -64,7 +64,7 @@ namespace Buscaminas
             hor = 0;
             this.label3.Text = "0:0:0";
 
-            flowLayoutPanel1.BackColor = System.Drawing.Color.SteelBlue;
+            flowLayoutPanel1.BackColor = System.Drawing.Color.Gray;
             tablero = new Tablero(row, col);
             botones = new MiButton[row, col];
             label2.Text = "" + tablero.getNCasillasNoPulsadas();
@@ -73,7 +73,7 @@ namespace Buscaminas
                 {
                     botones[i, j] = new MiButton(i, j);
                     botones[i, j].Size = new System.Drawing.Size(20, 20);
-                    botones[i, j].BackColor = System.Drawing.Color.SteelBlue;
+                    botones[i, j].BackColor = System.Drawing.Color.Gray;
                     botones[i, j].FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                     botones[i, j].Margin = new System.Windows.Forms.Padding(0);
                     botones[i, j].Padding = new System.Windows.Forms.Padding(0);
@@ -104,15 +104,8 @@ namespace Buscaminas
                         botones[i, j].BackColor = System.Drawing.Color.Lavender;
                        flowLayoutPanel1.Enabled = false;
                         DialogResult result;
-                        result = MessageBox.Show("Te quedaste sin piernas! , quieres salir del juego?", "Busca - Minas",
-                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        botones[i, j].Image = global::Buscaminas.Properties.Resources.bomba;
-
-                        if (result == System.Windows.Forms.DialogResult.Yes)
-                        {
-                            this.Close();
-                        }
-                        else { return; }
+                        result = MessageBox.Show("Te quedaste sin piernas! ¯¯(ºoº)¯¯", "Busca - Minas",
+                       MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
@@ -121,7 +114,7 @@ namespace Buscaminas
                         botones[i, j].Font = new Font("Arial", 7, FontStyle.Bold);
                         if (contenido.numeroBombas() == 1)
                         {
-                            botones[i, j].ForeColor = System.Drawing.Color.SteelBlue;
+                            botones[i, j].ForeColor = System.Drawing.Color.Gray;
                             botones[i, j].Text = "" + contenido.numeroBombas();
                         }
                         else if (contenido.numeroBombas() == 2)
@@ -146,12 +139,7 @@ namespace Buscaminas
                 flowLayoutPanel1.Enabled = false;
                 timer1.Enabled = false;
 
-                result = MessageBox.Show("Ganaste en "+this.label3.Text+", salir del juego?", "Busca - Minas",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == System.Windows.Forms.DialogResult.Yes)
-                {
-                    this.Close();
-                }
+                result = MessageBox.Show("Ganaste en *(^O^)*" + this.label3.Text + "", "My Application");
 
             }
 
