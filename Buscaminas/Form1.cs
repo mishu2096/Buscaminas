@@ -100,12 +100,14 @@ namespace Buscaminas
                     {
                         timer1.Enabled = false;
 
-                        botones[i, j].Image = global::Buscaminas.Properties.Resources.bomba;
+                        botones[i, j].BackgroundImage = bombaBitmap;
                         botones[i, j].BackColor = System.Drawing.Color.Lavender;
                        flowLayoutPanel1.Enabled = false;
                         DialogResult result;
                         result = MessageBox.Show("Te quedaste sin piernas! , quieres salir del juego?", "Busca - Minas",
                         MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        botones[i, j].Image = global::Buscaminas.Properties.Resources.bomba;
+
                         if (result == System.Windows.Forms.DialogResult.Yes)
                         {
                             this.Close();
