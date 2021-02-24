@@ -25,12 +25,12 @@ namespace Buscaminas
 
         private void button1_Click(object sender, EventArgs e){
             
-            row = 10;
-            col = 10;
+            row = 8;
+            col = 8;
             timer1.Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Enabled = true;
-            this.ClientSize = new System.Drawing.Size(300, 300);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             flowLayoutPanel1.Size = new System.Drawing.Size(160, 160);
             inicializarTableroJuego(8, 8);
         }
@@ -40,7 +40,7 @@ namespace Buscaminas
             timer1.Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Enabled = true;
-            this.ClientSize = new System.Drawing.Size(500, 500);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             flowLayoutPanel1.Size = new System.Drawing.Size(320, 320);
             inicializarTableroJuego(16, 16);
             
@@ -52,7 +52,7 @@ namespace Buscaminas
             timer1.Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Enabled = true;
-            this.ClientSize = new System.Drawing.Size(650, 450);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             flowLayoutPanel1.Size = new System.Drawing.Size(600, 320);
             inicializarTableroJuego(30, 16);
         }
@@ -171,7 +171,9 @@ namespace Buscaminas
             this.label3.Text = "" + hor+":"+min+":"+ seg;
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
