@@ -37,8 +37,8 @@
             this.lbancho = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +71,7 @@
             this.lbluser.Size = new System.Drawing.Size(88, 20);
             this.lbluser.TabIndex = 2;
             this.lbluser.Text = "USUARIO:";
+            this.lbluser.Click += new System.EventHandler(this.lbluser_Click);
             // 
             // label2
             // 
@@ -126,22 +127,10 @@
             this.panel1.Controls.Add(this.lbancho);
             this.panel1.Controls.Add(this.lbalto);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(30, 24);
+            this.panel1.Location = new System.Drawing.Point(80, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(358, 104);
+            this.panel1.Size = new System.Drawing.Size(285, 107);
             this.panel1.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.NavajoWhite;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(188, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "TIEMPO:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -155,11 +144,23 @@
             this.label5.Text = "TIEMPO:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.NavajoWhite;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(188, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "TIEMPO:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 267);
+            this.ClientSize = new System.Drawing.Size(407, 178);
             this.Controls.Add(this.panel1);
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
