@@ -45,5 +45,10 @@ namespace Buscaminas
         {
 
         }
+
+        private void lbluser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

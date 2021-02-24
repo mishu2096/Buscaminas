@@ -6,6 +6,7 @@ namespace Buscaminas
     public partial class Form2 : Form
     {
         Form1 form1;
+        Form3 form3;
         public Form2()
         {
 
@@ -17,8 +18,15 @@ namespace Buscaminas
         private void buttonprueba_Click(object sender, EventArgs e)
         {
             Form1 frm = new Form1();
-
-            frm.Show();
+            
+            if (string.IsNullOrEmpty(txtusuario.Text))
+            {
+                MessageBox.Show("Ingrese un usuario");
+            }
+            else
+            {
+                frm.Show();
+            }
         }
         private void buttonscore_Click(object sender, EventArgs e)
         {
