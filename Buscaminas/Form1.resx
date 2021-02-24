@@ -120,7 +120,19 @@
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>172, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAALpJREFUSEu1k9ENwjAMRCMEjMMe7MECrMM+DMUX2EGHkuYcO0l50klNen5RqzYN
+        cJe8JLe8WuQdyBDWIFuzHiVcLHBnZqTAnF2RAupYlYLKQ0+apHIxafQw9l13xWcJ5Ffd2KD7j+9lQ/bp
+        H8XE4CnBARqse+T7+ptiqAc60V5+R15ZuUi0p6/I4+eLiEf4i/gkqcR7yRvXHuKDpPE0J01gOlbk7uyo
+        HI8fmkFxWy7XR4nVcykHrRBS+gDjAWdUpQ9+CAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -144,16 +156,4 @@
         87u0/osuzZ9fwhWKz9eoxhhIBCmpAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAALpJREFUSEu1k9ENwjAMRCMEjMMe7MECrMM+DMUX2EGHkuYcO0l50klNen5RqzYN
-        cJe8JLe8WuQdyBDWIFuzHiVcLHBnZqTAnF2RAupYlYLKQ0+apHIxafQw9l13xWcJ5Ffd2KD7j+9lQ/bp
-        H8XE4CnBARqse+T7+ptiqAc60V5+R15ZuUi0p6/I4+eLiEf4i/gkqcR7yRvXHuKDpPE0J01gOlbk7uyo
-        HI8fmkFxWy7XR4nVcykHrRBS+gDjAWdUpQ9+CAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>172, 17</value>
-  </metadata>
 </root>

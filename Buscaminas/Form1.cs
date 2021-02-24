@@ -139,7 +139,7 @@ namespace Buscaminas
                 flowLayoutPanel1.Enabled = false;
                 timer1.Enabled = false;
 
-                result = MessageBox.Show("Ganaste en *(^O^)*" + this.label3.Text + "", "My Application");
+                result = MessageBox.Show("Ganaste en *(^O^)*" + this.label3.Text + "", "Busca - Minas");
 
             }
 
