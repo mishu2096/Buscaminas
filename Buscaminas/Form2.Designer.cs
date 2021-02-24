@@ -47,10 +47,9 @@ namespace Buscaminas
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(445, 352);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(334, 286);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 63);
+            this.button1.Size = new System.Drawing.Size(121, 51);
             this.button1.TabIndex = 11;
             this.button1.Text = "SCORE";
             this.button1.UseVisualStyleBackColor = false;
@@ -60,21 +59,19 @@ namespace Buscaminas
             // 
             this.txtusuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusuario.Location = new System.Drawing.Point(92, 265);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtusuario.Location = new System.Drawing.Point(69, 215);
             this.txtusuario.Multiline = true;
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(263, 36);
+            this.txtusuario.Size = new System.Drawing.Size(198, 30);
             this.txtusuario.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Snap ITC", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 223);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(39, 181);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(358, 39);
+            this.label1.Size = new System.Drawing.Size(288, 31);
             this.label1.TabIndex = 8;
             this.label1.Text = "Nombre del Minero";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -82,10 +79,9 @@ namespace Buscaminas
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Buscaminas.Properties.Resources.bomba;
-            this.pictureBox2.Location = new System.Drawing.Point(473, 156);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(355, 127);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(183, 132);
+            this.pictureBox2.Size = new System.Drawing.Size(137, 107);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -93,11 +89,10 @@ namespace Buscaminas
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox1.Image = global::Buscaminas.Properties.Resources.carita;
-            this.pictureBox1.Location = new System.Drawing.Point(119, 38);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Image = global::Buscaminas.Properties.Resources.bienvenido;
+            this.pictureBox1.Location = new System.Drawing.Point(89, 31);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(464, 160);
+            this.pictureBox1.Size = new System.Drawing.Size(348, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -109,10 +104,9 @@ namespace Buscaminas
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(119, 340);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(89, 276);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 63);
+            this.button2.Size = new System.Drawing.Size(121, 51);
             this.button2.TabIndex = 12;
             this.button2.Text = "JUGAR";
             this.button2.UseVisualStyleBackColor = false;
@@ -120,10 +114,10 @@ namespace Buscaminas
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(725, 457);
+            this.ClientSize = new System.Drawing.Size(544, 371);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button1);
@@ -131,7 +125,6 @@ namespace Buscaminas
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.Control;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ":: PRINCIPAL ::";

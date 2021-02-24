@@ -17,6 +17,8 @@ namespace Buscaminas
         private Tablero tablero;
         private static Image bombaImagen = ((System.Drawing.Image)(Properties.Resources.bomba));
         private Bitmap bombaBitmap = new Bitmap(bombaImagen, new Size(20, 20));
+        private static Image caritaImagen = ((System.Drawing.Image)(Properties.Resources.carita));
+        private Bitmap caritaBitmap = new Bitmap(caritaImagen, new Size(20, 20));
         private int seg;
         private int min;
         private int hor;
@@ -103,6 +105,7 @@ namespace Buscaminas
                         botones[i, j].BackgroundImage = bombaBitmap;
                         botones[i, j].BackColor = System.Drawing.Color.Lavender;
                        flowLayoutPanel1.Enabled = false;
+                        BackgroundImage = bombaBitmap;
                         DialogResult result;
                         result = MessageBox.Show("Te quedaste sin piernas! ¯¯(ºoº)¯¯", "Busca - Minas",
                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -135,9 +138,11 @@ namespace Buscaminas
             }
             if (tablero.getNCasillasNoPulsadas() == tablero.getNumeroBombas())
             {
+
                 DialogResult result;
                 flowLayoutPanel1.Enabled = false;
                 timer1.Enabled = false;
+                BackgroundImage = caritaBitmap;
 
                 result = MessageBox.Show("Ganaste en *(^O^)*" + this.label3.Text + "", "Busca - Minas");
 

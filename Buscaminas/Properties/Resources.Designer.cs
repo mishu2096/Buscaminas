@@ -63,6 +63,16 @@ namespace Buscaminas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bienvenido {
+            get {
+                object obj = ResourceManager.GetObject("bienvenido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bomba {
             get {
                 object obj = ResourceManager.GetObject("bomba", resourceCulture);
