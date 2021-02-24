@@ -30,7 +30,7 @@ namespace Buscaminas
             timer1.Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Enabled = true;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.ClientSize = new System.Drawing.Size(600, 400);
             flowLayoutPanel1.Size = new System.Drawing.Size(160, 160);
             inicializarTableroJuego(8, 8);
         }
@@ -40,7 +40,7 @@ namespace Buscaminas
             timer1.Enabled = false;
             flowLayoutPanel1.Controls.Clear();
             flowLayoutPanel1.Enabled = true;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.ClientSize = new System.Drawing.Size(600, 500);
             flowLayoutPanel1.Size = new System.Drawing.Size(320, 320);
             inicializarTableroJuego(16, 16);
             

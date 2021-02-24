@@ -119,9 +119,9 @@ namespace Buscaminas
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(100, 100);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(150, 100);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(282, 205);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(205, 205);
             this.flowLayoutPanel1.TabIndex = 14;
             // 
             // pictureBox2
