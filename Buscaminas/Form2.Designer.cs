@@ -30,7 +30,6 @@ namespace Buscaminas
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -39,21 +38,6 @@ namespace Buscaminas
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(334, 286);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 51);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "SCORE";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.buttonscore_Click);
             // 
             // txtusuario
             // 
@@ -104,7 +88,7 @@ namespace Buscaminas
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(89, 276);
+            this.button2.Location = new System.Drawing.Point(355, 275);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 51);
             this.button2.TabIndex = 12;
@@ -120,7 +104,6 @@ namespace Buscaminas
             this.ClientSize = new System.Drawing.Size(544, 371);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -137,8 +120,6 @@ namespace Buscaminas
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;

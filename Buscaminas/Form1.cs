@@ -25,8 +25,9 @@ namespace Buscaminas
         private int row;
         private int col;
 
-        private void button1_Click(object sender, EventArgs e){
-            
+        private void button1_Click(object sender, EventArgs e)
+        {
+
             row = 8;
             col = 8;
             timer1.Enabled = false;
@@ -36,7 +37,8 @@ namespace Buscaminas
             flowLayoutPanel1.Size = new System.Drawing.Size(160, 160);
             inicializarTableroJuego(8, 8);
         }
-        private void button2_Click(object sender, EventArgs e){
+        private void button2_Click(object sender, EventArgs e)
+        {
             row = 16;
             col = 16;
             timer1.Enabled = false;
@@ -45,10 +47,11 @@ namespace Buscaminas
             this.ClientSize = new System.Drawing.Size(600, 500);
             flowLayoutPanel1.Size = new System.Drawing.Size(320, 320);
             inicializarTableroJuego(16, 16);
-            
+
         }
 
-        private void button3_Click(object sender, EventArgs e){
+        private void button3_Click(object sender, EventArgs e)
+        {
             row = 16;
             col = 30;
             timer1.Enabled = false;
@@ -58,7 +61,7 @@ namespace Buscaminas
             flowLayoutPanel1.Size = new System.Drawing.Size(600, 320);
             inicializarTableroJuego(30, 16);
         }
-       
+
         private void inicializarTableroJuego(int col, int row)
         {
             seg = 0;
@@ -80,7 +83,7 @@ namespace Buscaminas
                     botones[i, j].Margin = new System.Windows.Forms.Padding(0);
                     botones[i, j].Padding = new System.Windows.Forms.Padding(0);
                     this.flowLayoutPanel1.Controls.Add(botones[i, j]);
-                    
+
                     botones[i, j].Click += new System.EventHandler(this.button_Click);
                 }
             flowLayoutPanel1.WrapContents = true;
@@ -104,11 +107,18 @@ namespace Buscaminas
 
                         botones[i, j].BackgroundImage = bombaBitmap;
                         botones[i, j].BackColor = System.Drawing.Color.Lavender;
-                       flowLayoutPanel1.Enabled = false;
+                        flowLayoutPanel1.Enabled = false;
                         BackgroundImage = bombaBitmap;
                         DialogResult result;
-                        result = MessageBox.Show("Te quedaste sin piernas! ¯¯(ºoº)¯¯", "Busca - Minas",
-                       MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        result = MessageBox.Show("Te quedaste sin piernas! ¯¯(ºoº)¯¯ , quieres salir del juego?", "Busca - Minas",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        botones[i, j].Image = global::Buscaminas.Properties.Resources.bomba;
+
+                        if (result == System.Windows.Forms.DialogResult.Yes)
+                        {
+                            this.Close();
+                        }
+                        else { return; }
                     }
                     else
                     {
@@ -144,41 +154,48 @@ namespace Buscaminas
                 timer1.Enabled = false;
                 BackgroundImage = caritaBitmap;
 
-                result = MessageBox.Show("Ganaste *(^O^)* en " + this.label3.Text + "", "Busca - Minas");
-
+                result = MessageBox.Show("Ganaste en *(^O^)* " + this.label3.Text + ", salir del juego?", "Busca - Minas",
+                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == System.Windows.Forms.DialogResult.Yes)
+                {
+                    this.Close();
+                }
             }
 
 
         }
-     
-        private void button_Click(object sender, EventArgs e){
-            timer1.Enabled = true;
-            int fila = ((MiButton)sender).i;
-            int colu = ((MiButton)sender).j;
 
-            tablero.levanta(((MiButton)sender).i + 1,
-                            ((MiButton)sender).j + 1);
+            private void button_Click(object sender, EventArgs e)
+            {
+                timer1.Enabled = true;
+                int fila = ((MiButton)sender).i;
+                int colu = ((MiButton)sender).j;
 
-            refrescarTableroUI(row, col);
-        }   
+                tablero.levanta(((MiButton)sender).i + 1,
+                                ((MiButton)sender).j + 1);
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (min == 61) {
-                hor += 1;
-                min = 0;
+                refrescarTableroUI(row, col);
             }
-            if(seg ==61){
-                min += 1;
-                seg = 0;
+
+            private void timer1_Tick(object sender, EventArgs e)
+            {
+                if (min == 61)
+                {
+                    hor += 1;
+                    min = 0;
+                }
+                if (seg == 61)
+                {
+                    min += 1;
+                    seg = 0;
+                }
+                seg += 1;
+                this.label3.Text = "" + hor + ":" + min + ":" + seg;
             }
-            seg+=1;
-            this.label3.Text = "" + hor+":"+min+":"+ seg;
-        }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+            private void Form1_Load(object sender, EventArgs e)
+            {
 
+            }
         }
     }
-}
